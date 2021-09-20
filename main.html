@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Finder</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="mainbg">
+    <div>
+        <div class="login">
+            <h2 id="heading">Profile Finder</h2>
+            <p id="title">Find out your Github Profile</p>
+            <p id="title1">Click to Sign-up/Login</p>
+        </div>
+        <div>
+            <button id="signbtn">SIGN UP</button>
+            <button id="loginbtn">LOGIN IN</button>
+            <div id="signupform" style="display: none;">
+                    <input id="f_name" type="text" maxlength=">=8" minlength="4" placeholder="Firstname" required/><label class="alert1"></label>&emsp;&emsp;<input id="l_name" type="text" minlength="1" placeholder="Lastname" required/><label class="alert2"></label><br><br>
+                    <input id="dob" type="date" placeholder="D-O-B" required/><label class="alert3"></label><br><br>
+                    <input id="gender" type="text" placeholder="Gender" required/><label class="alert4"></label><br><br>
+                    <input id="mail" type="email" placeholder="Email" required/><label class="alert5"></label><br><br>
+                    <input id="pwd" type="password" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$" title="Password must contain 1 uppercase , 1 lowercase , atleast 1 number and any symbol" 
+                      minlength="8" maxlength="20" placeholder="Password" required/><label class="alert6"></label><br><br>
+                    <button onclick= "storesigndata()" id="signup">SIGN UP</button>
+                    <button onclick = "gitmainpage()"  id="tonxt" style="display: none;">TO NXT</button>
+            </div>
+            <div id="loginform" style="display: none;">
+                <input id="mail1" type="email" placeholder="Email" required/><label class="alert7"></label><br><br>
+                <input id="pwd1" type="password" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$" title="Password must contain 1 uppercase , 1 lowercase , atleast 1 number and any symbol" 
+                  minlength="8" maxlength="20" placeholder="Password" required/><label class="alert8"></label><br><br>
+                <button onclick= "storelogindata()" id="loginin">LOGIN IN</button>
+                <button onclick = "gitmainpage()"  id="tonxt1" style="display: none;">TO NXT</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripting.js"></script>
+</body>
+</html>
