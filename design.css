@@ -1,39 +1,37 @@
 /* ------------mainpage-------------- */
 .mainbg{
-    background-image: url("https://repository-images.githubusercontent.com/58559694/aeae5400-6102-11e9-980d-dc74185ed41d");
+    background-image: url("./assets/2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* https://blog.runcloud.io/wp-content/uploads/2021/06/what-is-github.png */
 } 
 #heading{
     margin-top: 30px;
-    margin-left: 35px;
-    font-family: "Lucida Console", monospace;
-    font-style: italic;
-    font-weight: bold;
+    margin-left: 50px;
     font-size: 50px;
+    font-family: 'Baloo Tamma', cursive;
+    letter-spacing: 5px;
     position: absolute;
-    color: whitesmoke;
+
 }
 #title{
     margin-top: 100px;
     margin-left: 90px;
-    font-family: "Lucida Console", monospace;
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
     font-size: 40px;
     position: absolute;
-    color: whitesmoke;
+    color: rgb(19, 18, 18);
 }
 #title1{
     margin-top: 140px;
-    margin-left: 26cm;
-    font-family: "Lucida Console", monospace;
+    margin-left: 23cm;
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
     font-size: 25px;
     position: absolute; 
-    color: whitesmoke;
+    color: rgb(19, 18, 18);
 }
 #signbtn{
     width: 160px;
@@ -85,72 +83,134 @@
     transition: .5s;
     cursor: pointer;
 }
+#signupform{
+    margin-top: 160px;
+    margin-left: 165px;
+    height: 13cm;
+    width: 10cm;
+    border-top: 8px solid rgb(223, 47, 47);
+    border-radius: 5px;
+    background-color: whitesmoke;
+    position: absolute;
+
+}#top{
+    font-size: 40px;
+    margin-left: 35px;
+    margin-top: 10px;
+    font-family: 'Baloo Tamma', cursive;
+    position: absolute;
+}
 #f_name{
     width: 150px;
     height: 30px;
-    margin-left: 150px;
-    margin-top: 190px;
-    border-radius: 15px;
-    font-family: Roboto;
+    margin-left: 25px;
+    margin-top: 80px;
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    font-family: 'Baloo Tamma', cursive;
     position: absolute;
     outline: none; 
 }
 #l_name{
     width: 150px;
     height: 30px;
-    left: 325px;
-    margin-top: 190px;
-    border-radius: 15px;
-    font-family: Roboto;
+    margin-left: 160px;
+    margin-top: 80px;
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    font-family: 'Baloo Tamma', cursive;
     position: absolute;
     outline: none;
 }
 #dob{
     width: 320px;
     height: 30px;
-    margin-left: 150px;
-    margin-top: 210px;
-    border-radius: 15px;
-    font-family: Roboto;
+    margin-left: 25px;
+    margin-top: 100px;
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    font-family: 'Baloo Tamma', cursive;
     position: absolute;
     outline: none;
 }
-#gender{
-    width: 320px;
-    height: 30px;
-    margin-left: 150px;
-    margin-top: 230px;
-    border-radius: 15px;
+#gmale{
+    height: 15px;
+    width: 15px;
+    margin-left: 30px;
+    margin-top: 120px;
     font-family: Roboto;
     position: absolute;
-    outline: none;
+}
+.gmale{
+    margin-left: 55px;
+    margin-top: 117px;
+    font-size: 20px;
+    font-family: Roboto;
+    position: absolute;
+}
+#gfemale{
+    height: 15px;
+    width: 15px;
+    margin-left: 110px;
+    margin-top: 84px;
+    font-family: Roboto;
+    position: absolute;   
+}
+.gfemale{
+    margin-left: 135px;
+    margin-top: 81px;
+    font-size: 20px;
+    font-family: Roboto;
+    position: absolute;
 }
 #mail{
     width: 320px;
     height: 30px;
-    margin-left: 150px;
-    margin-top: 250px;
-    border-radius: 15px;
-    font-family: Roboto;
+    margin-left: 25px;
+    margin-top: 85px;
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    font-family: 'Baloo Tamma', cursive;
     position: absolute;
     outline: none;
 }
 #pwd{
     width: 320px;
     height: 30px;
-    margin-left: 150px;
-    margin-top: 270px;
-    border-radius: 15px;
-    font-family: Roboto;
+    margin-left: 25px;
+    margin-top: 105px;
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    font-family: 'Baloo Tamma', cursive;
     position: absolute;
     outline: none;
 }
+#cb1{
+    height: 15px;
+    width: 15px;
+    margin-left: 28px;
+    margin-top: 127px;
+    font-family: Roboto;
+    position: absolute;
+}
+.cb1{
+    margin-left: 60px;
+    margin-top: 122px;
+    font-size: 20px;
+    font-family: Roboto;
+    position: absolute;  
+}
 #signup{
-    width: 160px;
+    width: 140px;
     height: 30px;
-    margin-left: 315px;
-    margin-top: 290px;
-    border-radius: 15px;
+    margin-left: 200px;
+    margin-top: 145px;
+    border-radius: 12px;
     font-family: Roboto;
     background-color: black;
     border: none;
@@ -171,11 +231,11 @@
     cursor: pointer;
 }
 #tonxt{
-    width: 160px;
+    width: 140px;
     height: 30px;
-    margin-left: 315px;
-    margin-top: 340px;
-    border-radius: 15px;
+    margin-left: 200px;
+    margin-top: 200px;
+    border-radius: 12px;
     font-family: Roboto;
     background-color: black;
     border: none;
@@ -195,31 +255,74 @@
     transition: .5s;
     cursor: pointer;
 }
+#loginform{
+    margin-top: 170px;
+    margin-left: 170px;
+    height: 10cm;
+    width: 10cm;
+    border-top: 8px solid rgb(223, 47, 47);
+    border-radius: 5px;
+    color: black;
+    background-color: whitesmoke;
+    position: absolute;
+}
+#memlogin{
+    font-size: 40px;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-family: 'Baloo Tamma', 'cursive';
+    position: absolute;
+}
+#forget{
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 130px;
+}
+#gicon{
+    margin-left: 150px;
+    margin-top: 40px;
+    color: rgb(87, 145, 233);
+    background-color: whitesmoke;
+    border-radius: 60%;
+    position: absolute;
+}
+#ficon{
+    margin-left: 80px;
+    margin-top: 40px;
+    color: whitesmoke;
+    background-color: rgb(45, 115, 219);
+    border-radius: 60%;
+    position: absolute;
+}
 #mail1{
     width: 320px;
     height: 30px;
-    margin-left: 180px;
-    margin-top: 220px;
+    margin-left: 25px;
+    margin-top: 90px;
     border-radius: 15px;
-    font-family: Roboto;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    font-family: 'Baloo Tamma', cursive;
     position: absolute;
     outline: none;
 }
 #pwd1{
     width: 320px;
     height: 30px;
-    margin-left: 180px;
-    margin-top: 250px;
+    margin-left: 25px;
+    margin-top: 110px;
     border-radius: 15px;
-    font-family: Roboto;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    font-family: 'Baloo Tamma', 'cursive';
     position: absolute;
     outline: none;
 }
 #loginin{
     width: 160px;
     height: 30px;
-    margin-left: 345px;
-    margin-top: 280px;
+    margin-left: 200px;
+    margin-top: 10px;
     border-radius: 15px;
     font-family: Roboto;
     background-color: black;
@@ -243,8 +346,8 @@
 #tonxt1{
     width: 160px;
     height: 30px;
-    margin-left: 345px;
-    margin-top: 335px;
+    margin-left: 200px;
+    margin-top: 70px;
     border-radius: 15px;
     font-family: Roboto;
     background-color: black;
@@ -281,14 +384,14 @@
 }
 /* -------------gitmain page--------------- */
 .gitmainbg{
-    background-image: url("https://blog.runcloud.io/wp-content/uploads/2021/06/what-is-github.png");
+    background-image: url("./assets/mainbg.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
 }
 #header{
     margin-top: 25px;
     margin-left: 40px;
-    font-family: 'Times New Roman', Times;
+    font-family: "Lucida Console", monospace;
     font-style: italic;
     font-weight: bold;
     font-size: 50px;
@@ -320,7 +423,7 @@
 #text1{
     margin-left: 850px;
     margin-top: 310px;
-    font-family: Roboto;
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
     font-size: 40px;
@@ -331,15 +434,15 @@
 #text2{
     margin-left: 720px;
     margin-top: 560px;  
-    font-family: Roboto;
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     position: absolute;
-    color: black;
+    color: black
 }
 #git{
-    color: rgb(248, 189, 28);
+    color: black;
     margin-top: 380px;
     margin-left: 900px;
     position: absolute;  
@@ -347,8 +450,8 @@
 #git:hover{
     transform: scale(1.15);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-    border: 1px solid rgb(231, 126, 5);
-    background-color: rgb(241, 123, 12);
+    border: 1px solid black;
+    background-color: black;
     color: rgb(246, 248, 247);
     transition: .5s;
     cursor: pointer;
@@ -356,51 +459,69 @@
 /* ----------------github----------------- */
 
 .gitbg{
-    background-image: url("https://github.githubassets.com/images/modules/explore/social.jpg");
+    background-image: url("./assets/5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 #github{
-    color: #b2aef2;
-    margin-top: 80px;
-    margin-left: 60px;
-    font-family: "Lucida Console", monospace;
+    color: rgb(19, 18, 18);
+    margin-top: 70px;
+    margin-left: 80px;
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
     font-size: 60px;
     position: absolute;
 }
 #date1{
-    color: #b2aef2;
+    color: rgb(19, 18, 18);
     margin-top: 25px;
     margin-left: 27cm;
-    font-family: "Lucida Console", monospace;
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
     font-size: 30px;
     position: absolute;
 }
 #time1{
-    color: #b2aef2;
+    color: rgb(19, 18, 18);
     margin-top: 60px;
     margin-left: 29cm;
-    font-family: "Lucida Console", monospace;
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
     font-size: 30px;
     position: absolute;
 }
+#history{
+    width: 120px;
+    height: 30px;
+    margin-left: 28.5cm;
+    margin-top: 110px;
+    border-radius: 15px;
+    font-family: Garamond, serif;
+    opacity: 0.6;
+    transition: 0.3s;
+    background-color: black;
+    border: none;
+    color: white;
+    position: absolute;
+}
+#history:hover{
+    opacity: 1;
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(246, 248, 247);
+    transition: .5s;
+    cursor: pointer;
+}
 #giticon{
     position: absolute;
     margin-top: 30px;
-    margin-left: 600px;
-    color: rgb(246, 248, 247); 
-}
-#giticon:hover{
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-    color: #b2aef2;
-    transition: .5s;
-    cursor: pointer;
+    margin-left: 550px;
+    color: rgb(19, 18, 18) 
 }
 #ginput{
     width: 380px;
@@ -408,6 +529,8 @@
     margin-left: 160px;
     margin-top: 180px;
     border-radius: 15px;
+    border: 2px solid black;
+    background-color: whitesmoke;
     font-family: Garamond, serif;
     position: absolute;
     outline: none;
@@ -441,69 +564,96 @@
     position: absolute;
     width: 8cm;
     height: 8cm;
-    margin-left: 250px;
+    margin-left: 290px;
     margin-top: 275px;
     border: 1px solid whitesmoke;
     border-radius: 150px;
 }
 #gpname{
-    color: #7f97d9;
+    color: rgb(19, 18, 18);
     margin-top: 200px;
     margin-left: 680px;
-    font-family: "Lucida Console", monospace; 
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
     font-size: 30px;
     position: absolute;
 }
 #gname{
-    color: #7f97d9;
+    color: rgb(19, 18, 18);
     margin-top: 260px;
     margin-left: 680px;
-    font-family: "Lucida Console", monospace; 
+    font-family: 'Baloo Tamma', cursive; 
     font-style: italic;
     font-weight: bold;
     font-size: 30px;
     position: absolute;
 }
 #gbio{
-    color: #7f97d9;
+    color: rgb(19, 18, 18);
     margin-top: 320px;
     margin-left: 680px;
-    font-family: "Lucida Console", monospace;
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
     font-size: 30px;
     position: absolute;
 }
 #grepos{
-    color: #7f97d9;
+    color: rgb(19, 18, 18);
     margin-top: 400px;
     margin-left: 680px;
-    font-family: "Lucida Console", monospace;
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
     font-size: 30px;
     position: absolute;
 }
 #gemail{
-    color: #7f97d9;
+    color: rgb(19, 18, 18);
     margin-top: 460px;
     margin-left: 680px;
-    font-family: "Lucida Console", monospace;
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
     font-size: 30px;
     position: absolute;
 }
 #glocation{
-    color: #7f97d9;
+    color: rgb(19, 18, 18);
     margin-top: 520px;
     margin-left: 680px;
-    font-family: "Lucida Console", monospace;
+    font-family: 'Baloo Tamma', cursive;
     font-style: italic;
     font-weight: bold;
     font-size: 30px;
+    position: absolute;
+}
+/* ---------------history-page----------- */
+nav{
+    height: 2cm;
+    width: 33.5cm;
+    background-color: cadetblue;
+    position: absolute;
+}
+#histext{
+    margin-top: 23px;
+    margin-left: 30px;
+    position: absolute;
+}
+#hissearch{
+    height: 50px;
+    width: 500px;
+    margin-left: 395px;
+    margin-top: 10px;
+    position: absolute;
+}
+#his_list{
+    height: 15cm;
+    width: 15cm;
+    border: 2px solid black;
+    margin-top: 80px;
+    margin-left: 350px;
     position: absolute;
 }
 @viewport{

@@ -1,3 +1,8 @@
+// ---------redirect page-----------
+function historypage(){
+    window.location = "history.html"
+}
+
 // -----------date & time-----------
 
 let live_date = new Date();
@@ -22,7 +27,7 @@ function gfunction(){
     xhrrequest.onreadystatechange = function (){
         if(this.readyState === XMLHttpRequest.DONE && this.status === 200){
             let response = JSON.parse(this.response);
-            console.log(response);
+            // console.log(response);
             let img = document.createElement("img");
             img.setAttribute("id", "gprofile");
             main.appendChild(img);
@@ -45,13 +50,30 @@ function gfunction(){
             p6.setAttribute("id", "glocation");
             main.appendChild(p6);
             img.src = `${response.avatar_url}`; 
-            p1.innerHTML = `Profile Name :${response.login}`; 
-            p2.innerHTML = `Name :${response.name}`; 
-            p3.innerHTML = `Bio :${response.bio}`;
-            p4.innerHTML = `Repositories :${response.public_repos}`;
-            p5.innerHTML = `E-Mail :${response.email}`;
-            p6.innerHTML = `Location :${response.location}`;
+            p1.innerHTML = `Profile Name : ${response.login}`; 
+            p2.innerHTML = `Name : ${response.name}`; 
+            p3.innerHTML = `Bio : ${response.bio}`;
+            p4.innerHTML = `Repositories : ${response.public_repos}`;
+            p5.innerHTML = `E-Mail : ${response.email}`;
+            p6.innerHTML = `Location : ${response.location}`;
         }
     }
     xhrrequest.send();
 } 
+
+// --------------History-sec-------------
+document.querySelector("#gsearch").addEventListener("click", createHistory)
+function createHistory(){
+    let his_input = document.querySelector('#ginput').value;
+    document.querySelector('#ginput').value = "";
+    localStorage.setItem("His-names",his_input);
+}
+let list_his = localStorage.getItem("His-names");  
+console.log(list_his);
+let his_list = document.querySelector("#his_list1");
+    his_list.innerHTML = list_his;
+        
+
+
+
+

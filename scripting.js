@@ -1,6 +1,6 @@
 // --------------mainpage--------------
 
-// git redirect page  
+//-------------git redirect page---------  
 function gitmainpage(){
     window.location = "githubmain.html"
 }  
@@ -8,7 +8,7 @@ function gitfunction(){
     window.location = "github.html";
 }
 
-// view on signin
+// -------------view on signin------------
 document.querySelector("#signbtn").addEventListener("click", togglesign)
 function togglesign() {
     var signup = document.getElementById('signupform');
@@ -29,11 +29,16 @@ function togglelogin() {
     }
 }
 
-// ---------LoginForm-------------
+// ------------LoginForm--------------
 document.querySelector("#signup").addEventListener("click", checksigncondition)
 function checksigncondition(){
+    let formatpwd = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
     if(document.getElementById("f_name").value == ""){
         alert("Fill the FirstName");
+        return false
+    }
+    else if(document.getElementById("f_name").value.length < 4){
+        alert("Type the  correct name ");
         return false
     }
     else if(document.getElementById("l_name").value == ""){
@@ -44,16 +49,20 @@ function checksigncondition(){
         alert("Fill the DOB ");
         return false
     }
-    else if(document.getElementById("gender").value == ""){
-        alert("Fill the Gender ");
-        return false
-    }
     else if(document.getElementById("mail").value == ""){
         alert("Fill the E-mail ");
         return false
     }
     else if(document.getElementById("pwd").value == ""){
         alert("Fill the Password ");
+        return false
+    }
+    else if(document.getElementById("pwd").value.length < 8){
+        alert("Password Length is minimum 8");
+        return false
+    }
+    else if(document.getElementById("pwd").value.match(formatpwd)){
+        alert("Password is Strong");
         return false
     }
     else{
